@@ -1,0 +1,91 @@
+ERROR - 2022-02-08 16:57:32 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Name or service not known
+CRITICAL - 2022-02-08 16:57:32 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+#0 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(900): App\Controllers\Home->__construct()
+#6 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#7 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-08 17:02:32 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Name or service not known
+CRITICAL - 2022-02-08 17:02:32 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+#0 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(900): App\Controllers\Home->__construct()
+#6 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#7 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-08 17:02:48 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Name or service not known
+CRITICAL - 2022-02-08 17:02:48 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+#0 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(900): App\Controllers\Home->__construct()
+#6 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#7 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-08 17:02:55 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Name or service not known
+CRITICAL - 2022-02-08 17:02:55 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Name or service not known
+#0 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(900): App\Controllers\Home->__construct()
+#6 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#7 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-08 17:04:24 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\MySQLi\mysqli_init()
+CRITICAL - 2022-02-08 17:04:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Call to undefined function CodeIgniter\Database\MySQLi\mysqli_init()
+#0 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(900): App\Controllers\Home->__construct()
+#6 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#7 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-08 17:04:26 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\MySQLi\mysqli_init()
+CRITICAL - 2022-02-08 17:04:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Call to undefined function CodeIgniter\Database\MySQLi\mysqli_init()
+#0 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(900): App\Controllers\Home->__construct()
+#6 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#7 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-02-08 17:04:29 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\MySQLi\mysqli_init()
+CRITICAL - 2022-02-08 17:04:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Call to undefined function CodeIgniter\Database\MySQLi\mysqli_init()
+#0 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/app/Controllers/Home.php(21): CodeIgniter\BaseModel->findAll()
+#5 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(900): App\Controllers\Home->__construct()
+#6 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#7 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/u877275727/domains/puptaguigcs.net/public_html/feams_copy/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
