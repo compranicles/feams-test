@@ -1,8 +1,8 @@
 <?php
-namespace Modules\Elections\Controllers;
+namespace Modules\Election\Controllers;
 
 use App\Controllers\BaseController;
-use Modules\Elections\Models as Models;
+use Modules\Election\Models as Models;
 use App\Models as AppModels;
 
 class ElectoralPositions extends BaseController
@@ -21,13 +21,17 @@ class ElectoralPositions extends BaseController
             return redirect()->to(base_url());
         }
         $data['rolePermission'] = $data['perm_id']['rolePermission'];
+        $data['perms'] = array();
+        foreach($data['rolePermission'] as $rolePerms) {
+            array_push($data['perms'], $rolePerms['perm_mod']);
+        }
 
         $data['elec_positions'] = $this->electoralPositionModel->findAll();
 
         $data['user_details'] = user_details($this->session->get('user_id'));
         $data['active'] = 'elec_positions';
         $data['title'] = 'Electoral Positions';
-        return view('Modules\Elections\Views\electoralPositions\index', $data);
+        return view('Modules\Election\Views\electoralPositions\index', $data);
     }
 
     public function add() {
@@ -38,6 +42,10 @@ class ElectoralPositions extends BaseController
             return redirect()->to(base_url());
         }
         $data['rolePermission'] = $data['perm_id']['rolePermission'];
+        $data['perms'] = array();
+        foreach($data['rolePermission'] as $rolePerms) {
+            array_push($data['perms'], $rolePerms['perm_mod']);
+        }
 
         $data['edit'] = false;
         if($this->request->getMethod() == 'post') {
@@ -63,7 +71,7 @@ class ElectoralPositions extends BaseController
         $data['user_details'] = user_details($this->session->get('user_id'));
         $data['active'] = 'elec_positions';
         $data['title'] = 'Electoral Position';
-        return view('Modules\Elections\Views\electoralPositions\form', $data);
+        return view('Modules\Election\Views\electoralPositions\form', $data);
     }
 
     public function edit($id) {
@@ -74,8 +82,12 @@ class ElectoralPositions extends BaseController
             return redirect()->to(base_url());
         }
         $data['rolePermission'] = $data['perm_id']['rolePermission'];
-
-        $data['value'] = $this->electoralPositionModel->where(['id' => $id])->first();
+        $data['perms'] = array();
+        foreach($data['rolePermission'] as $rolePerms) {
+            array_push($data['perms'], $rolePerms['perm_mod']);
+        }
+        $data['id'] = $id;
+        $data['value'] = $this->electoralPositionModel->find($id);
         $data['edit'] = true;
         if(empty($data['value'])){
             $this->session->setFlashdata('sweetalertfail', true);
@@ -101,7 +113,7 @@ class ElectoralPositions extends BaseController
                 $data['errors'] = $this->validation->getErrors();
             }
         }
-
+        
         $data['user_details'] = user_details($this->session->get('user_id'));
         $data['active'] = 'elec_positions';
         $data['title'] = 'Electoral Position';
