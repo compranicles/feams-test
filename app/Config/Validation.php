@@ -49,7 +49,10 @@ class Validation
 		],
 		'middle_name' => [
 			'label' => 'Middle name',
-			'rules' => 'permit_empty|max_length[30]|alpha_space'
+			'rules' => 'max_length[30]|regex_match[/^$|^[a-zA-Z0-9]+$/]',
+			'errors' => [
+				'regex_match' => 'Invalid input!',
+			]
 		],
 		'last_name' => [
 			'label' => 'Last Name', 
@@ -356,7 +359,10 @@ class Validation
 	],
 	'middle_name' => [
 		'label' => 'Middle name',
-		'rules' => 'permit_empty|max_length[30]|alpha_space'
+		'rules' => 'max_length[30]|regex_match[/^$|^[a-zA-Z0-9]+$/]',
+		'errors' => [
+			'regex_match' => 'Invalid input!',
+		]
 	],
 	'last_name' => [
 		'label' => 'Last Name', 
