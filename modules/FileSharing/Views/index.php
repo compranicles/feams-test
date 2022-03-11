@@ -348,8 +348,8 @@
                 </td>
               </tr>
             <?php endif;?>
+            <?php $ctr4++;?>
           <?php endif;?>
-          <?php $ctr4++;?>
         <?php endforeach;?>
       </tbody>
     </table>
