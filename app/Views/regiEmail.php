@@ -8,6 +8,6 @@
         <p>Hello <?= esc($first_name)?> <?= esc($last_name)?></p>
         <p>These are the steps to pay for your membership fee:</p>
         <br>
-        <?= esc($paymentMethod['steps'], 'raw')?>
+        <?= esc($paymentMethod['steps'], 'html')?>
     </body>
 </html>
