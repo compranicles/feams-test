@@ -60,7 +60,7 @@ class Validation
 		],
 		'email' => [
 			'label' => 'Email', 
-			'rules' => 'required|min_length[5]|max_length[70]|valid_email',
+			'rules' => 'required|min_length[5]|max_length[70]|valid_email|is_unique[users.email]',
 			'errors' => [
 				'is_unique' => 'Email already exists!',	
 			]
@@ -370,7 +370,7 @@ class Validation
 	],
 	'email' => [
 		'label' => 'Email', 
-		'rules' => 'required|min_length[5]|max_length[70]|valid_email|is_unique[users.email]',
+		'rules' => 'required|min_length[5]|max_length[70]|valid_email',
 		'errors' => [
 			'is_unique' => 'Email already exists!',	
 		]
