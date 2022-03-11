@@ -91,7 +91,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php $ctr = 1;?>
+        <?php $ctr1 = 1;?>
         <?php foreach($files as $file):?>
           <?php if($file['category'] === 'Documents'):?>
             <?php if($file['visibility'] === 'for all'):?>
@@ -132,7 +132,7 @@
                 </td>
               </tr>
             <?php endif;?>
-            <?php $ctr++;?>
+            <?php $ctr1++;?>
           <?php endif;?>
         <?php endforeach;?>
       </tbody>
@@ -163,7 +163,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php $ctr = 1;?>
+        <?php $ctr2 = 1;?>
         <?php foreach($files as $file):?>
           <?php if($file['category'] === 'Media'):?>
             <?php if($file['visibility'] === 'for all'):?>
@@ -204,7 +204,7 @@
                 </td>
               </tr>
             <?php endif;?>
-            <?php $ctr++;?>
+            <?php $ctr2++;?>
           <?php endif;?>
         <?php endforeach;?>
       </tbody>
@@ -235,7 +235,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php $ctr = 1;?>
+        <?php $ctr3 = 1;?>
         <?php foreach($files as $file):?>
           <?php if($file['category'] === 'Images'):?>
             <?php if($file['visibility'] === 'for all'):?>
@@ -276,7 +276,7 @@
                 </td>
               </tr>
             <?php endif;?>
-            <?php $ctr++;?>
+            <?php $ctr3++;?>
           <?php endif;?>
         <?php endforeach;?>
       </tbody>
@@ -307,7 +307,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php $ctr = 1;?>
+        <?php $ctr4 = 1;?>
         <?php foreach($files as $file):?>
           <?php if($file['category'] === 'Others'):?>
             <?php if($file['visibility'] === 'for all'):?>
@@ -349,7 +349,7 @@
               </tr>
             <?php endif;?>
           <?php endif;?>
-          <?php $ctr++;?>
+          <?php $ctr4++;?>
         <?php endforeach;?>
       </tbody>
     </table>
