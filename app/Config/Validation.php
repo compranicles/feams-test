@@ -51,7 +51,7 @@ class Validation
 			'label' => 'Middle name',
 			'rules' => 'max_length[30]|regex_match[/^$|^[a-zA-Z0-9]+$/]',
 			'errors' => [
-				'regex_match' => 'Invalid input!',
+				'regex_match' => 'The Middle Name field may only contain alphabetical characters and spaces.',
 			]
 		],
 		'last_name' => [
@@ -361,12 +361,19 @@ class Validation
 		'label' => 'Middle name',
 		'rules' => 'max_length[30]|regex_match[/^$|^[a-zA-Z0-9]+$/]',
 		'errors' => [
-			'regex_match' => 'Invalid input!',
+			'regex_match' => 'The Middle Name field may only contain alphabetical characters and spaces.',
 		]
 	],
 	'last_name' => [
 		'label' => 'Last Name', 
 		'rules' => 'required|min_length[2]|max_length[30]|alpha_space'
+	],
+	'email' => [
+		'label' => 'Email', 
+		'rules' => 'required|min_length[5]|max_length[70]|valid_email|is_unique[users.email]',
+		'errors' => [
+			'is_unique' => 'Email already exists!',	
+		]
 	],
 	'image' => [
 		'label' => 'Profile Picture', 
