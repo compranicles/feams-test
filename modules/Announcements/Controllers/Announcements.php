@@ -99,7 +99,7 @@ class Announcements extends BaseController
                 $file = $this->request->getFile('image');
                 $ann = $_POST;
                 
-                if(!empty($_FILES['image']['name'])){
+                if(is_uploaded_file($_FILES['image']['name'])){
                     $ann['image'] = $file->getRandomName();
                 }
                 else{
@@ -112,7 +112,7 @@ class Announcements extends BaseController
                     $activityLog['user'] = $this->session->get('user_id');
                     $activityLog['description'] = 'Added a new announcement';
                     $this->activityLogModel->save($activityLog);
-                    if(!empty($_FILES['image']['name'])){
+                    if(is_uploaded_file($_FILES['image']['name'])){
                         $file->move('public/uploads/announcements', $ann['image']);
                         if ($file->hasMoved()) {
                             if(isset($_POST['sendMail']) == 'yes') {
